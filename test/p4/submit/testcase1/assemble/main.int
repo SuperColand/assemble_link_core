@@ -1,0 +1,71 @@
+.data
+20
+
+.text
+lui $at arr@Hi
+ori $t1 $at arr@Lo
+addiu $t0 $0 41
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 8467
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 6334
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 6500
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 9169
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 5724
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 1478
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 9358
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 6962
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 4464
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 5705
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 8145
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 3281
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 6827
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 9961
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 491
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 2995
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 1942
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 4827
+sw $t0 0 $t1
+addiu $t1 $t1 4
+addiu $t0 $0 5436
+sw $t0 0 $t1
+addiu $t1 $t1 4
+lui $at arr@Hi
+ori $a0 $at arr@Lo
+addiu $a1 $0 20
+jal bubble
+syscall

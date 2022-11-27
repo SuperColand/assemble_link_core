@@ -1,0 +1,7 @@
+.idea/
+result/
+*.tar.gz
+*.zip
+*.pyz
+test_result/
+backup-kernels/

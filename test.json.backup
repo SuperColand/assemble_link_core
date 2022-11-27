@@ -1,0 +1,38 @@
+
+{
+    "submit_dir": "/coursegrader/submit",
+    "testdata_dir": "/coursegrader/testdata",
+    "kernel_dir": "/coursegrader/dockerext",
+    "entrypoint": ["python3", "/coursegrader/dockerext/kernel.pyz"],
+    "testcases":[
+//        {
+//            "name": "hello world",
+//            "submit": {
+//                "score":"100",
+//                "verdict": "Accepted"
+//            }
+//        },
+//        {
+//            "name": "a+b",
+//            "score": "75"
+//        },
+//        {
+//            "name": "gcd",
+//            "submits": [{
+//                    "name": "wrong",
+//                    "verdict": "Compile Error",
+//                    "score": "0"
+//                }, {
+//                    "name": "correct",
+//                    "verdict": "Accepted",
+//                    "score": "100"
+//                }
+//            ]
+//        },
+        {
+            "name": "p4",
+            "score": 100
+        }
+    ]
+}
+

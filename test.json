@@ -1,0 +1,14 @@
+
+{
+    "submit_dir": "/coursegrader/submit",
+    "testdata_dir": "/coursegrader/testdata",
+    "kernel_dir": "/coursegrader/dockerext",
+    "entrypoint": ["python3", "/coursegrader/dockerext/kernel.pyz"],
+    "testcases":[
+        {
+            "name": "p4",
+            "score": 100
+        }
+    ]
+}
+

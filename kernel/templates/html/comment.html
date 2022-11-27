@@ -1,0 +1,22 @@
+{% extends "base.jinja" %}
+
+{% block body %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Testcase</th>
+      <th scope="col">Verdict</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for item in summary %}
+    <tr>
+      <th scope="row">{{item.name}}</th>
+      <td>{{item.verdict}}</td>
+      <td>{{item.score}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

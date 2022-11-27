@@ -1,0 +1,14 @@
+.data
+0
+
+.text
+24040000
+240428a3
+0c000000
+0000000c
+
+.symbol
+0	main
+
+.relocation
+8	prime

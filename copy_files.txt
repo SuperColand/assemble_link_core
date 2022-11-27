@@ -1,0 +1,30 @@
+.gitignore
+copy_files.txt
+manage.py
+README.md
+test.json
+docker/Dockerfile
+kernel/postwork.py
+kernel/prework.py
+kernel/run.py
+kernel/__init__.py
+kernel/__main__.py
+kernel/templates/__init__.py
+kernel/templates/html/base.jinja
+kernel/templates/html/index.html
+test/a+b/submit/aaa.c
+test/a+b/testdata/input1.txt
+test/a+b/testdata/input2.txt
+test/a+b/testdata/input3.txt
+test/a+b/testdata/input4.txt
+test/a+b/testdata/output1.txt
+test/a+b/testdata/output2.txt
+test/a+b/testdata/output3.txt
+test/a+b/testdata/output4.txt
+test/gcd/submits/correct/gcd.c
+test/gcd/submits/wrong/ce.c
+test/gcd/testdata/input1.txt
+test/gcd/testdata/output1.txt
+test/hello world/submit/submit.c
+test/hello world/testdata/input1.txt
+test/hello world/testdata/output1.txt
