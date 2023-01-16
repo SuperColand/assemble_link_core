@@ -1,8 +1,0 @@
-.data
-0
-
-.text
-addiu $a0 $0 0
-addiu $a0 $0 10403
-jal prime
-syscall

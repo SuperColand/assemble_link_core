@@ -51,10 +51,17 @@ def prework(job: Job):
     c_dir = os.path.join(submit_dir, 'c')
     c_src = os.path.join(submit_dir, "*.c")
 
-    # 编译生成两个
+    comment = ""
+
+    # 编译生成两个可执行文件
+    zip_path = os.path.join(submit_dir, "src.zip")
+    if os.path.exists(zip_path):
+        comment += "找到src.zip，进行解压\n"
+        pygrading.exec("unzip src.zip")
+
     assembler_src = os.path.join(submit_dir, "my_assembler_utils.c")
     linker_src = os.path.join(submit_dir, "my_linker_utils.c")
-    comment = ""
+
     if not os.path.exists(assembler_src) and not os.path.exists(linker_src):
         job.verdict("Fail")
         job.comment("没有找到my_assembler_utils.c和my_linker_utils.c，两个文件需要至少上传一个")

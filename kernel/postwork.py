@@ -25,7 +25,8 @@ def postwork(job: Job) -> dict:
     job.get_config()['my_comment'] += "，每个测试点100分，你的得分为" + str(total_score) + "\n"
 
     job.verdict("满分" if total_score == 100*number else "非满分")
-    job.score(round(total_score/(100*number)*0.15))
+    score = round(total_score/(100 * number) * 100)
+    job.score(score)
     job.comment(str2html(job.get_config()['my_comment']))
     # job.comment("Mission Complete")
     summary = job.get_summary()

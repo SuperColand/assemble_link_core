@@ -1,1 +1,0 @@
-java -jar P4Judge.jar cpu.circ -tty table -load input.txt -ram 2 >output.txt
